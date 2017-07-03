@@ -17,7 +17,6 @@ class Movie(models.Model):
     actors = models.ManyToManyField(Person, through='Role')
 
     def __str__(self):
-
         return '"{}" {}'.format(self.title, self.director)
 
 
