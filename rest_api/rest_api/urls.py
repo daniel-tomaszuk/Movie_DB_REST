@@ -15,7 +15,14 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from movies import views
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^movie/$', views.MovieList.as_view()),
+    url(r'^movie/(?P<id>(\d)+)', views.MovieView.as_view()),
+
+    url(r'^person/$', views.PersonList.as_view()),
+    url(r'^person/(?P<id>(\d)+)', views.PersonView.as_view())
 ]
