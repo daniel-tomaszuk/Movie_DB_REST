@@ -10,7 +10,7 @@ Default url list:
 
 - localhost:8000/movie/{id} -> shows detailed information about movie with ID = id;
 
-- localhost:8000/person -> shows list all people
+- localhost:8000/person -> shows list of all people;
 
 - localhost:8000/person/{id} -> shows detailed information about movie with ID = id;
 
