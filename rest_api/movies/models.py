@@ -9,7 +9,6 @@ class Person(models.Model):
 
 
 class Movie(models.Model):
-
     title = models.CharField(max_length=128)
     description = models.TextField()
     director = models.ForeignKey(Person, related_name='director', default=None)
