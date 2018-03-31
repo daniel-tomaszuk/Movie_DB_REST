@@ -24,5 +24,7 @@ urlpatterns = [
     url(r'^movie/(?P<id>(\d)+)', views.MovieView.as_view()),
 
     url(r'^person/$', views.PersonList.as_view()),
-    url(r'^person/(?P<id>(\d)+)', views.PersonView.as_view())
+    url(r'^person/(?P<id>(\d)+)', views.PersonView.as_view()),
+    url(r'^$', views.Base.as_view()),
+
 ]

@@ -1,0 +1,26 @@
+<!doctype html>
+<html ng-app="myApp">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.9/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-resource/1.6.9/angular-resource.min.js"></script>
+        <!--jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!--bootstrap and css with it-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!--angluar js static scripts-->
+        {% load static %}
+        <script src="{% static 'movies/app.module.js' %}"></script>
+        <script src="{% static 'movies/movie-list/movie-list.module.js' %}"></script>
+        <script src="{% static 'movies/movie-list/movie-list.component.js' %}"></script>
+        <!--get core-->
+        <script src="{% static 'core/core.module.js' %}"></script>
+        <script src="{% static 'core/get-movies-data/get-movies-data.module.js' %}"></script>
+        <script src="{% static 'core/get-movies-data/get-movies-data.service.js' %}"></script>
+
+    </head>
+    <body>
+        <movie-list></movie-list>
+    </body>
+</html>

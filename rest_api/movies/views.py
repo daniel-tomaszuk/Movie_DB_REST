@@ -5,19 +5,22 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from django.http import Http404
+from django.views import View
+from django.shortcuts import render
 
 
 class MovieList(APIView):
 
     def get(self, request, format=None):
         """
-        Gets all rows from Movies in DB, serializes it and return in response
+        Gets all rows from Movies in DB, serializes it and returns in response
         :param request:
         :param format:
         :return: Serialized Movies data
         """
         movies = Movie.objects.all()
-        serializer = MovieSerializer(movies, many=True, context={"request": request})
+        serializer = MovieSerializer(movies, many=True, context={"request":
+                                                                 request})
         return Response(serializer.data)
 
     def post(self, request, format=None):
@@ -108,7 +111,8 @@ class PersonList(APIView):
         :return: Serializes data of all people in DB
         """
         people = Person.objects.all()
-        serializer = PersonSerializer(people, many=True, context={"request": request})
+        serializer = PersonSerializer(people, many=True, context={"request":
+                                                                  request})
         return Response(serializer.data)
 
     def post(self, request, format=None):
@@ -190,3 +194,7 @@ class PersonView(APIView):
         """
         pass
 
+
+class Base(View):
+    def get(self, request):
+        return render(request, 'base.html')
