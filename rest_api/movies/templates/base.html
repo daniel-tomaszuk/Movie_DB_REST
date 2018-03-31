@@ -14,13 +14,20 @@
         <script src="{% static 'movies/app.module.js' %}"></script>
         <script src="{% static 'movies/movie-list/movie-list.module.js' %}"></script>
         <script src="{% static 'movies/movie-list/movie-list.component.js' %}"></script>
+        <script src="{% static 'movies/people-list/people-list.module.js' %}"></script>
+        <script src="{% static 'movies/people-list/people-list.component.js' %}"></script>
+
         <!--get core-->
         <script src="{% static 'core/core.module.js' %}"></script>
         <script src="{% static 'core/get-movies-data/get-movies-data.module.js' %}"></script>
         <script src="{% static 'core/get-movies-data/get-movies-data.service.js' %}"></script>
 
+        <script src="{% static 'core/get-people-data/get-people-data.module.js' %}"></script>
+        <script src="{% static 'core/get-people-data/get-people-data.service.js' %}"></script>
+
     </head>
     <body>
         <movie-list></movie-list>
+        <people-list></people-list>
     </body>
 </html>

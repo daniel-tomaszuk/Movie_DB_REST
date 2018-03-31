@@ -2,5 +2,6 @@
 
 // Define the module and dependencies
 angular.module('core', [
-    'core.getMoviesData'
+    'core.getMoviesData',
+    'core.getPeopleData'
 ]);
