@@ -10,7 +10,7 @@
       <!--Body content-->
       <ul class="movies">
         <li ng-repeat="person in $ctrl.people | filter:$ctrl.query">
-          <a href="#/people/{{ person.id }}">{{ person.name }}</a>
+          <a href="#!/person/{{ person.id }}">{{ person.name }}</a>
         </li>
       </ul>
     </div>

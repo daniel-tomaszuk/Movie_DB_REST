@@ -3,5 +3,6 @@
 // Define the module and dependencies
 angular.module('core', [
     'core.getMoviesData',
-    'core.getPeopleData'
+    'core.getPeopleData',
+    'core.getPeopleByIdData'
 ]);
