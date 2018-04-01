@@ -1,5 +1,5 @@
 # Movie_DB_REST
-Movie catalog with REST API functionality. Implements GET, POST, PUT, DELETE methods.
+Movie catalog with REST API functionality. Implements GET, POST, PUT, DELETE methods. Uses AngularJS as frontend and REST API client.
 
 Default url list:
 
