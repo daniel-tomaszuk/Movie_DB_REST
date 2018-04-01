@@ -1,0 +1,12 @@
+<h3>REST movie data:</h3>
+<ul class="movie">
+    <li>{{ $ctrl.movie.id + ": " + $ctrl.movie.title }}</li>
+    <li>{{ $ctrl.movie.description }}</li>
+    <li>{{ $ctrl.movie.director }}</li>
+    <li>{{ $ctrl.movie.year }}</li>
+    <li>Actors:</li>
+    <ul>
+        <li ng-if="$ctrl.movie.actors.length === 0">No actors yet.</li>
+        <li ng-repeat="actor in $ctrl.movie.actors" >{{ actor }}</li>
+    </ul>
+</ul>

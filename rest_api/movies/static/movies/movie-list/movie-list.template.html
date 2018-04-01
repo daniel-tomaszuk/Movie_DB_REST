@@ -21,7 +21,7 @@
       <!--Body content-->
       <ul class="movies">
         <li ng-repeat="movie in $ctrl.movies | filter:$ctrl.query | orderBy:$ctrl.orderProp">
-          <a href="#/movie/{{ movie.id }}">{{ movie.title }}</a>
+          <a href="#!/movie/{{ movie.id }}">{{ movie.title }}</a>
         </li>
       </ul>
 

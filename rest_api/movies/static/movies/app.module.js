@@ -6,5 +6,6 @@ angular.module('myApp', [
     'core',
     'movieList',
     'peopleList',
+    'getMoviesByIdData',
     'getPeopleByIdData'
 ]);

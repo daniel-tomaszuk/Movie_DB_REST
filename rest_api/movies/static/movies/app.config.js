@@ -13,6 +13,9 @@ angular.
         when('/person/:id', {
           template: '<get-people-by-id></get-people-by-id>'
         }).
+        when('/movie/:id', {
+          template: '<get-movies-by-id></get-movies-by-id>'
+        }).
         otherwise('/');
     }
   ]);
